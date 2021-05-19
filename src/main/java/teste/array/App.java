@@ -71,3 +71,15 @@ class App {
 
 }
 
+/** Qual a dificuldade de inserir os novos alunos nessa estrutura de dados? 
+ * Justifique a sua resposta direcionando aos conceitos de gerenciamento de memória. 
+ * 
+ * A dificuldade de cadastrar os novos alunos é gerada pela limitação imposta ao definirmos 
+ * que o primeiro array de cadastros terá um limite de 25 posições. Ou seja, criamos uma 
+ * estrutura estática de armazenamento de dados, alocando para ela uma quantidade fixa da 
+ * memória disponível e preenchemos toda essa lista com os 25 primeiros alunos. Se tentarmos
+ * cadastrar novos alunos, sem sobreescrever os já cadastrados, o programa tenta acessar um
+ * índice inexistente no array.
+ * Dessa forma, a solução foi copiar o array cadastrado anteriormente para um novo array com 
+ * mais 5 posições disponíveis.
+ */
